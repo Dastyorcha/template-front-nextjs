@@ -1,0 +1,72 @@
+{
+  "common": {
+    "siteName": "Dastyorcha",
+    "tagline": "Next.js starter template"
+  },
+  "hero": {
+    "eyebrow": "Next.js 16 starter",
+    "title": "Dastyorcha",
+    "tagline": "A modern, minimal Next.js template. i18n, SEO, dark mode, and shadcn primitives — out of the box.",
+    "ctaDeveloper": "Developer",
+    "ctaContact": "Get in touch",
+    "contactsLabel": "Contact channels"
+  },
+  "header": {
+    "home": "Home",
+    "openMenu": "Open menu",
+    "menuDescription": "Site navigation menu",
+    "contactCta": "Contact"
+  },
+  "nav": {
+    "home": {
+      "label": "Home"
+    }
+  },
+  "footer": {
+    "home": "Home",
+    "description": "Dastyorcha — a modern, minimal Next.js starter template, production-ready for your next project.",
+    "navHeading": "Navigation",
+    "contactHeading": "Contact",
+    "copyright": "© {year} Dastyorcha. All rights reserved.",
+    "developer": "Developer",
+    "social": {
+      "telegram": "Telegram",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "facebook": "Facebook",
+      "substack": "Substack"
+    }
+  },
+  "langSwitcher": {
+    "label": "Language",
+    "ariaLabel": "Select language",
+    "languages": {
+      "uz": "O‘zbekcha",
+      "en": "English",
+      "ru": "Русский"
+    }
+  },
+  "notFound": {
+    "title": "Page not found.",
+    "subtitle": "The page you are looking for has moved or no longer exists.",
+    "ctaPrimary": "Back to home",
+    "ctaSecondary": "Contact us",
+    "logoAlt": "Dastyorcha logo"
+  },
+  "seo": {
+    "home": {
+      "title": "Dastyorcha — Next.js 16 starter template",
+      "description": "Dastyorcha — a production-ready Next.js 16 starter template by Muxsinjon Maxsudovich. i18n, SEO, dark mode, and shadcn primitives included.",
+      "keywords": [
+        "dastyorcha",
+        "muxsinjon",
+        "next.js template",
+        "next.js starter",
+        "react starter",
+        "frontend template",
+        "i18n template"
+      ]
+    }
+  }
+}

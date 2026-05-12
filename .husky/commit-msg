@@ -1,0 +1,23 @@
+#!/usr/bin/env sh
+
+subject_line=$(head -n 1 "$1")
+pattern='^\[(feat|fix|docs|refactor|test|style|task|chore)\] .+'
+
+if ! printf '%s' "$subject_line" | grep -qE "$pattern"; then
+  cat <<EOF >&2
+
+❌ Invalid commit message:
+   "$subject_line"
+
+Required format:
+  [type] description of changes
+
+Allowed types:
+  feat, fix, docs, refactor, test, style, task, chore
+
+Example:
+  [feat] add user authentication
+
+EOF
+  exit 1
+fi

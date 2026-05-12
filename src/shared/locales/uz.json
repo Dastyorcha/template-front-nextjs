@@ -1,0 +1,72 @@
+{
+  "common": {
+    "siteName": "Dastyorcha",
+    "tagline": "Next.js starter shabloni"
+  },
+  "hero": {
+    "eyebrow": "Next.js 16 starter",
+    "title": "Dastyorcha",
+    "tagline": "Zamonaviy va minimal Next.js shabloni. i18n, SEO, dark mode va shadcn primitivlari — barchasi tayyor.",
+    "ctaDeveloper": "Dastur tuzuvchi",
+    "ctaContact": "Bog‘lanish",
+    "contactsLabel": "Aloqa kanallari"
+  },
+  "header": {
+    "home": "Bosh sahifa",
+    "openMenu": "Menyuni ochish",
+    "menuDescription": "Sayt navigatsiya menyusi",
+    "contactCta": "Bog‘lanish"
+  },
+  "nav": {
+    "home": {
+      "label": "Bosh sahifa"
+    }
+  },
+  "footer": {
+    "home": "Bosh sahifa",
+    "description": "Dastyorcha — Next.js asosida tayyorlangan zamonaviy va minimal starter shablon. Kelajakdagi loyihalar uchun darhol foydalanishga tayyor.",
+    "navHeading": "Navigatsiya",
+    "contactHeading": "Aloqa",
+    "copyright": "© {year} Dastyorcha. Barcha huquqlar himoyalangan.",
+    "developer": "Ishlab chiquvchi",
+    "social": {
+      "telegram": "Telegram",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "facebook": "Facebook",
+      "substack": "Substack"
+    }
+  },
+  "langSwitcher": {
+    "label": "Til",
+    "ariaLabel": "Tilni tanlash",
+    "languages": {
+      "uz": "O‘zbekcha",
+      "en": "English",
+      "ru": "Русский"
+    }
+  },
+  "notFound": {
+    "title": "Sahifa topilmadi.",
+    "subtitle": "Siz qidirayotgan sahifa boshqa joyga ko‘chgan yoki mavjud emas.",
+    "ctaPrimary": "Bosh sahifaga qaytish",
+    "ctaSecondary": "Biz bilan bog‘lanish",
+    "logoAlt": "Dastyorcha logotipi"
+  },
+  "seo": {
+    "home": {
+      "title": "Dastyorcha — Next.js 16 starter shabloni",
+      "description": "Dastyorcha — Muxsinjon Maxsudovich tomonidan tayyorlangan zamonaviy Next.js 16 starter shabloni. i18n, SEO, dark mode va shadcn primitivlari bilan.",
+      "keywords": [
+        "dastyorcha",
+        "muxsinjon",
+        "next.js shablon",
+        "next.js starter",
+        "react shablon",
+        "frontend shablon",
+        "i18n shablon"
+      ]
+    }
+  }
+}

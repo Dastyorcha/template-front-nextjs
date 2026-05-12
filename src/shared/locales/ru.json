@@ -1,0 +1,72 @@
+{
+  "common": {
+    "siteName": "Dastyorcha",
+    "tagline": "Стартовый шаблон Next.js"
+  },
+  "hero": {
+    "eyebrow": "Стартер Next.js 16",
+    "title": "Dastyorcha",
+    "tagline": "Современный минималистичный шаблон Next.js. i18n, SEO, тёмная тема и shadcn-примитивы — из коробки.",
+    "ctaDeveloper": "Разработчик",
+    "ctaContact": "Связаться",
+    "contactsLabel": "Каналы связи"
+  },
+  "header": {
+    "home": "Главная",
+    "openMenu": "Открыть меню",
+    "menuDescription": "Навигационное меню сайта",
+    "contactCta": "Связаться"
+  },
+  "nav": {
+    "home": {
+      "label": "Главная"
+    }
+  },
+  "footer": {
+    "home": "Главная",
+    "description": "Dastyorcha — современный минималистичный стартовый шаблон Next.js, готовый к использованию для ваших проектов.",
+    "navHeading": "Навигация",
+    "contactHeading": "Контакты",
+    "copyright": "© {year} Dastyorcha. Все права защищены.",
+    "developer": "Разработчик",
+    "social": {
+      "telegram": "Telegram",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "facebook": "Facebook",
+      "substack": "Substack"
+    }
+  },
+  "langSwitcher": {
+    "label": "Язык",
+    "ariaLabel": "Выбор языка",
+    "languages": {
+      "uz": "O‘zbekcha",
+      "en": "English",
+      "ru": "Русский"
+    }
+  },
+  "notFound": {
+    "title": "Страница не найдена.",
+    "subtitle": "Запрошенная страница перенесена или больше не существует.",
+    "ctaPrimary": "Вернуться на главную",
+    "ctaSecondary": "Связаться с нами",
+    "logoAlt": "Логотип Dastyorcha"
+  },
+  "seo": {
+    "home": {
+      "title": "Dastyorcha — стартовый шаблон Next.js 16",
+      "description": "Dastyorcha — готовый к использованию стартовый шаблон Next.js 16 от Muxsinjon Maxsudovich. С поддержкой i18n, SEO, тёмной темы и shadcn-примитивов.",
+      "keywords": [
+        "dastyorcha",
+        "muxsinjon",
+        "шаблон next.js",
+        "стартер next.js",
+        "react стартер",
+        "frontend шаблон",
+        "i18n шаблон"
+      ]
+    }
+  }
+}
