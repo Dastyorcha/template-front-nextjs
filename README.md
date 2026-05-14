@@ -57,7 +57,9 @@ See [`docs/architecture.md`](./docs/architecture.md) for the full layering rules
 
 ## Forking this template
 
-When you start a new project from this template:
+**For the full step-by-step rebrand guide with exact file paths, see [`docs/fork-checklist.md`](./docs/fork-checklist.md).**
+
+Quick summary — when you start a new project from this template:
 
 1. Replace branding — update `CONTACT_INFOS` in `src/shared/constants/contact-infos.ts`, the `Logo` component in `src/shared/custom/logo.tsx`, and the brand color tokens in `src/app/globals.css`.
 2. Update `DOMAIN` in `src/shared/constants/route-paths.ts` to your production origin.
@@ -69,6 +71,7 @@ When you start a new project from this template:
 ## Where to look
 
 - [`CLAUDE.md`](./CLAUDE.md) — always-loaded guide for [Claude Code](https://claude.com/claude-code) (commands, workflow, sync rules)
+- [`docs/fork-checklist.md`](./docs/fork-checklist.md) — step-by-step guide for rebranding this template into a new project
 - [`docs/architecture.md`](./docs/architecture.md) — FSD layers, routing constants (`PAGE_NAMES` / `ROUTE_PATHS`), dev playground
 - [`docs/translations.md`](./docs/translations.md) — i18n surface: locale JSONs, server/client APIs, language switcher, adding keys/locales
 - [`docs/seo.md`](./docs/seo.md) — `getPageMetadata` pipeline, JSON-LD, sitemap, robots, hreflang, standalone-route pattern
