@@ -62,6 +62,22 @@ For individual docs, consult the **Doc map** below.
 
 If a rule applies everywhere → it belongs here. If it applies to a subsystem → it belongs in a doc. If it applies to a class of tasks → it belongs in a skill. **Never duplicate a rule across files.** This file and `SKILL.md` must agree; when they diverge the docs are the tiebreaker.
 
+## Token-efficient lookup (read in this order)
+
+When you need information about this project, follow this ladder — **stop as soon as you have what you need.** Do not skip ahead, do not crawl source on a hunch.
+
+1. **This `CLAUDE.md`** — always loaded. Most questions stop here.
+2. **The Doc map below** → the single `docs/*.md` it points to. Read only that file.
+3. **`docs/codemap.md`** — one line per file (`path · exports · purpose`). Cheap to read whole; jump straight to the right file.
+4. **Only then** grep / find / Read source. For any search wider than ~3 greps or unknown locations, spawn the **Explore agent** — it returns a summary instead of dumping files into context.
+
+### Hard rules
+
+- **Never read** `node_modules/`, `.next/`, `.turbo/`, `build/`, `coverage/`, `*.log`.
+- **Plan first** if a task will touch more than ~3 files: list intended file paths + intent before reading any of them. Plan mode discards files the plan rules out.
+- **Update `docs/codemap.md` in the same change** whenever you add, remove, or rename an exported symbol under `src/`, or move a file. Do not regenerate the whole file — edit the affected lines only.
+- **Doc auto-injection is off.** This repo previously injected matching docs on first edit via `inject-docs.sh`; removed in favour of the ladder above.
+
 ## Doc map
 
 The single index of every `docs/*.md` file, what it covers, and what source-side changes should sync into it. `/doc-writer` reads this table to pick affected docs; when a new doc is created or its scope shifts, this table is updated in the same change. **Do not crawl `docs/` to "explore" — this table is the entry point.**
@@ -74,6 +90,7 @@ The single index of every `docs/*.md` file, what it covers, and what source-side
 | `docs/fork-checklist.md`  | Repo fork/bootstrap steps                                                    | Project-bootstrap changes                                  |
 | `docs/claude-hooks.md`    | Every shell hook in `.claude/hooks/`                                         | `.claude/hooks/`                                           |
 | `docs/claude-skills.md`   | Every skill in `.claude/skills/`                                             | `.claude/skills/`                                          |
+| `docs/codemap.md`         | One line per source file (`path · exports · purpose`); the third-tier lookup | Any add/remove/rename of an exported symbol under `src/`, or file move |
 
 ## Architecture summary (full version: `docs/architecture.md`)
 
