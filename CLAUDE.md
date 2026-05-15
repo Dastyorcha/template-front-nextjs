@@ -56,13 +56,24 @@ If a pre-commit hook fails, fix the underlying issue and create a **NEW** commit
 Don't ask "what's the convention" — read the relevant doc:
 
 - **`.claude/skills/ui-designer/SKILL.md`** — strict ruleset for any UI / token / locale / copy change. Activates automatically on file paths under `src/shared/components/ui/`, `src/widgets/`, `src/views/`, `src/app/globals.css`, `src/shared/locales/*.json`. **Read it before any UI work.**
-- **`docs/architecture.md`** — FSD layering, file map, naming conventions, routing constants (`PAGE_NAMES`, `ROUTE_PATHS`), dev playground.
-- **`docs/translations.md`** — locale shape, namespaces, server vs client APIs, language switcher.
-- **`docs/seo.md`** — `getPageMetadata` pipeline, JSON-LD, sitemap, robots, hreflang.
-- **`docs/claude-hooks.md`** — every shell hook, what it does, how to add new ones.
-- **`docs/claude-skills.md`** — how skills are scoped vs `CLAUDE.md` vs `docs/`.
+- **`.claude/skills/doc-writer/SKILL.md`** — manually triggered via `/doc-writer <topic>`. Documents a topic across all related docs using the Doc map below.
+
+For individual docs, consult the **Doc map** below.
 
 If a rule applies everywhere → it belongs here. If it applies to a subsystem → it belongs in a doc. If it applies to a class of tasks → it belongs in a skill. **Never duplicate a rule across files.** This file and `SKILL.md` must agree; when they diverge the docs are the tiebreaker.
+
+## Doc map
+
+The single index of every `docs/*.md` file, what it covers, and what source-side changes should sync into it. `/doc-writer` reads this table to pick affected docs; when a new doc is created or its scope shifts, this table is updated in the same change. **Do not crawl `docs/` to "explore" — this table is the entry point.**
+
+| Doc                       | Covers                                                                       | Sync triggers                                              |
+| ------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| `docs/architecture.md`    | FSD layering, file map, naming, routing constants (`PAGE_NAMES`, `ROUTE_PATHS`), dev playground, token families | `src/{app,views,widgets,features,shared}/`, `src/app/globals.css` (token list) |
+| `docs/translations.md`    | Locale shape, namespaces, server vs client APIs, language switcher           | `src/shared/locales/*.json`, `src/shared/lib/i18n/`        |
+| `docs/seo.md`             | `getPageMetadata` pipeline, JSON-LD, sitemap, robots, hreflang               | `src/shared/lib/seo/`, `src/app/**/page.tsx`               |
+| `docs/fork-checklist.md`  | Repo fork/bootstrap steps                                                    | Project-bootstrap changes                                  |
+| `docs/claude-hooks.md`    | Every shell hook in `.claude/hooks/`                                         | `.claude/hooks/`                                           |
+| `docs/claude-skills.md`   | Every skill in `.claude/skills/`                                             | `.claude/skills/`                                          |
 
 ## Architecture summary (full version: `docs/architecture.md`)
 

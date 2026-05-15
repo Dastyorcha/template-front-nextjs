@@ -27,6 +27,21 @@ Enforces (summary; full rules in the skill file):
 
 Read the skill file itself for the full ruleset.
 
+### `doc-writer`
+
+Path: `.claude/skills/doc-writer/SKILL.md`
+
+Manually triggered only — via the `/doc-writer <topic>` slash command. Does not auto-activate on any file path.
+
+Enforces:
+
+- **Single source of discovery**: reads the `## Doc map` table in `CLAUDE.md`. Never crawls `docs/` to "explore".
+- **Full coverage**: for one topic, updates *every* doc whose `Covers` column intersects — partial coverage defeats the skill.
+- **New docs allowed**: if no existing doc fits, creates `docs/<kebab-name>.md` and adds a row to the Doc map in the same change.
+- **No duplication**: shared facts live in their owning doc; other docs link to them.
+- **Map upkeep**: any new doc, scope shift, or new sync trigger is reflected in `CLAUDE.md`'s Doc map immediately.
+- **No git commands**: staging, commit, and PR are handled by the session hooks.
+
 ## Adding a new skill
 
 1. Create `.claude/skills/<skill-name>/SKILL.md`.
